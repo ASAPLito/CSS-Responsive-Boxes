@@ -1,3 +1,52 @@
 body {
   background: blanchedalmond;
 }
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+}
+
+.a {
+  background-color: red;
+  min-width: 100vw;
+  min-height: 30vh;
+}
+
+.b {
+  background-color: turquoise;
+  min-height: 70vh;
+  min-width: 80vw;
+}
+
+.c{
+  background-color: yellow;
+  min-height: 70vh;
+  min-width: 20vw;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .a {
+    min-height: 10vh;
+    width: 100%;
+
+  }
+
+  .b {
+    min-height: 80vh;
+    width: 100%;
+  }
+  
+  .c {
+    min-height: 10vh;
+    width: 100%;
+  }
+}
